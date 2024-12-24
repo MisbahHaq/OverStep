@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="/Product/product-detail.css">
+</head>
+
+<body>
+  <!-- Nav-Bar -->
+  <header>
+    <div class="navbar">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Product/shop.html">Shop</a></li>
+        <li><a href="../About/about.html">About Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="product-container">
+    <div class="image-section">
+      <img class="main-image" id="mainImage" src="/assets/shoenew331.avif" alt="Product Image">
+      <div class="thumbnail-container">
+        <img src="/assets/shoenew331.avif" class="thumbnail" alt="Product Thumbnail 1" onclick="changeImage(this)">
+        <img src="/assets/shoenew332.avif" class="thumbnail" alt="Product Thumbnail 2" onclick="changeImage(this)">
+        <img src="/assets/shoenew333.avif" class="thumbnail" alt="Product Thumbnail 3" onclick="changeImage(this)">
+      </div>
+    </div>
+
+    <div class="product-details">
+      <h1 class="product-title">PORTLAND</h1>
+      <h4 class="prduct-sub">Chelsea Boot</h4>
+      <p class="price">$120.00</p>
+      <div class="rating">⭐⭐⭐⭐⭐ (43 Reviews)</div>
+      <p class="description">
+        Portland is our Chelsea boot designed to fit your everyday lifestyle. Elastic inserts make them easy to pull-on from the office to the weekend – Portland is built to keep up with your every move.
+      </p>
+      <div class="size-selection">
+        <label for="size">Select Size:</label>
+        <select id="size" name="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <div class="button-group">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Section -->
+  <div class="email">
+    <h5 class="first">Join our email list!</h5>
+    <div class="tag">
+      <h6 class="second">
+        Be the first to know about new collections & exclusive offers
+      </h6>
+    </div>
+    <div class="form-control">
+      <input class="input" placeholder="Enter your email" required="" type="text" />
+      <button class="btn">Subscribe</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>At OverStep, every step matters. We are a shoe brand born from a passion for style, comfort, and durability.</p>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@example.com</p>
+        <p>Phone: +123 456 789</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="product-detail.js"></script>
+</body>
+</html>
